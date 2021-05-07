@@ -37,7 +37,9 @@ section, summary, time, mark, audio, video {
 
 article, aside, details, figure,
 footer, header, hgroup, menu, nav, section {
-	display: block;}
+	display: block;
+}
+
 
 figcaption {
 	display: block;
@@ -357,24 +359,41 @@ input, select, textarea {
 
 	.row {
 		display: flex;
-		margin-bottom: 40px;
-	  }
+		flex-direction: row;
+		max-width: 100%;
+		align-items: flex-start;
+		}
 	  
-	  .column {
-		flex: 33.33%;
-		margin-right: 40px;
-		padding-bottom: 15px;
-		border-bottom: 8px;
-		border-style: solid;
-		border-color: #302c23;
-		text-align: center;
-		font-size: 18px;
-		line-height: 25px;
-	  }
+		.column {
+			flex: 33.33%;
+			margin-right: 40px;
+			padding-bottom: 15px;
+			margin-bottom: 40px;
+			border-bottom: 8px;
+			border-style: solid;
+			border-color: #302c23;
+			text-align: center;
+			font-size: 18px;
+			line-height: 25px;
+			}
+		
+
+	@media screen and (max-width: 735px) {
+		.row {      
+			flex: 100%;
+			flex-direction: column;
+			align-items: center;
+		}
+		.column {      
+			max-width: 160px;
+		}
+	}
 
 	.row2 {
 		display: flex;
+		flex-direction: row;
 		margin-bottom: 20px;
+		align-items: flex-end;
 	  }
 	  
 	.column2 {
@@ -383,6 +402,14 @@ input, select, textarea {
 		margin-right: 20px;
 	  }
 
+
+	@media screen and (max-width: 560px) {
+		.row2 {      
+			flex: 100%;
+			flex-direction: column;
+			align-items: flex-start;
+		}
+	}
 
 /* Form */
 
