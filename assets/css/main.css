@@ -386,6 +386,7 @@ input, select, textarea {
 		}
 		.column {      
 			max-width: 160px;
+			margin-right: 0px;
 		}
 	}
 
