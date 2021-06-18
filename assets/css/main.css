@@ -181,7 +181,7 @@ input, select, textarea {
 		-webkit-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
 		-ms-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
 		transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
-		border-bottom: dotted 1px rgba(255, 255, 255, 0.5);
+		border-bottom: dotted 2px rgba(255, 255, 255, 1);
 		text-decoration: none;
 		font-family: 'Barlow Semi Condensed', sans-serif;
 		font-weight: 600;
@@ -206,6 +206,16 @@ input, select, textarea {
 		font-size: 1rem;
 		margin: 0 0 2rem 0;
 	}
+
+		p.major {
+			border-bottom: solid 8px #302c23;
+			width: -moz-max-content;
+			width: -webkit-max-content;
+			width: -ms-max-content;
+			max-width: 100%;
+			padding-bottom: 0rem;
+			margin: 0 0 2rem 0;
+		}
 
 	h1, h2, h3, h4, h5, h6 {
 		color: #ffffff;
@@ -318,7 +328,7 @@ input, select, textarea {
 
 	hr {
 		border: 0;
-		border-bottom: solid 1px #ffffff;
+		border-bottom: solid 2px #302c23;
 		margin: 2.75rem 0;
 
 	}
@@ -376,6 +386,26 @@ input, select, textarea {
 			font-size: 18px;
 			line-height: 25px;
 			}
+		
+	.row3 {
+		display: flex;
+		flex-direction: row;
+		max-width: 100%;
+		align-items: flex-start;
+	}
+
+		.column3 {
+			margin-right: 0px;
+			padding-bottom: 15px;
+			margin-bottom: 40px;
+			border-bottom: 8px;
+			border-style: solid;
+			border-color: #302c23;
+			text-align: center;
+			font-size: 18px;
+			line-height: 25px;
+		}
+
 		
 
 	@media screen and (max-width: 735px) {
@@ -838,11 +868,12 @@ input, select, textarea {
 		font-family: 'avenir', Arial, Helvetica, sans-serif;
 		list-style: decimal;
 		margin: -0.5rem 0 2rem 0;
-		padding-left: 1.25em;
+		padding-left: 1.5rem;
 	}
 
 		ol li {
-			padding-left: 0.25em;
+			padding-left: 0rem;
+			list-style-position: outside;
 		}
 
 	ul {
@@ -861,6 +892,7 @@ input, select, textarea {
 			ul.alt li {
 				border-top: solid 8px #e22a1b;
 				padding: 0.5em 0;
+				list-style-position: outside;
 			}
 
 				ul.alt li:first-child {
@@ -880,8 +912,11 @@ input, select, textarea {
 		}
 
 		dl dd {
-			margin-left: 2rem;
+			margin-left: 20px;
+			display: list-item;
+			list-style-type: disc;
 		}
+
 
 /* Actions */
 
@@ -1826,7 +1861,7 @@ input, select, textarea {
 		-ms-transition: -ms-transform 0.325s ease-in-out, -ms-filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
 		transition: transform 0.325s ease-in-out, filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
 		width: 100%;
-		max-width: 450px;
+		max-width: 550px;
 		margin-top: 4.5rem;
 		text-align: center;
 		letter-spacing: 0.2rem;
