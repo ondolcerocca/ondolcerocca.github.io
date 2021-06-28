@@ -414,6 +414,13 @@ input, select, textarea {
 			flex-direction: column;
 			align-items: center;
 		}
+
+		.row3 {      
+			flex: 100%;
+			flex-direction: column;
+			align-items: center;
+		}
+		
 		.column {      
 			max-width: 160px;
 			margin-right: 0px;
@@ -1886,4 +1893,16 @@ input, select, textarea {
 
 		body.is-preload #footer {
 			opacity: 0;
+		}
+
+		
+
+		@media screen and (max-width: 480px) {
+
+			footer .sqs-image .sqs-image-content img, footer .image-block {
+
+				transform: scale(0.5)
+			
+			}
+
 		}
